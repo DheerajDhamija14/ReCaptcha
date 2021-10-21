@@ -3,13 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19355BE92721366200400007 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19355BE42721366200400007 /* RxCocoa.xcframework */; };
+		19355BEA2721366200400007 /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19355BE42721366200400007 /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19355BEB2721366200400007 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19355BE52721366200400007 /* RxSwift.xcframework */; };
+		19355BEC2721366200400007 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19355BE52721366200400007 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19355BED2721366200400007 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19355BE62721366200400007 /* RxRelay.xcframework */; };
+		19355BEE2721366200400007 /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19355BE62721366200400007 /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19355BEF2721366200400007 /* RxTest.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19355BE72721366200400007 /* RxTest.xcframework */; };
+		19355BF02721366200400007 /* RxTest.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19355BE72721366200400007 /* RxTest.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		19355BF12721366200400007 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19355BE82721366200400007 /* RxBlocking.xcframework */; };
+		19355BF22721366200400007 /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19355BE82721366200400007 /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F206BAB51F8D3DE900A25807 /* ReCaptcha-Carthage.h in Headers */ = {isa = PBXBuildFile; fileRef = F206BAB31F8D3DE900A25807 /* ReCaptcha-Carthage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F206BB1D1F8D4DBC00A25807 /* ReCaptcha_RxSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = F206BB1B1F8D4DBC00A25807 /* ReCaptcha_RxSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F206BB221F8D4DDF00A25807 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F206BB121F8D4D1400A25807 /* RxSwift.framework */; };
 		F231B39A1FEC51C800F82943 /* DispatchQueue+Throttle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231B3991FEC51C800F82943 /* DispatchQueue+Throttle.swift */; };
 		F24EA1E11F9683FB001DEC17 /* ReCaptcha+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EA1DD1F9683F5001DEC17 /* ReCaptcha+Rx.swift */; };
 		F24EA1E21F968403001DEC17 /* ReCaptchaDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24EA1D81F9683F5001DEC17 /* ReCaptchaDecoder.swift */; };
@@ -31,7 +40,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		19355BE32721351200400007 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				19355BEC2721366200400007 /* RxSwift.xcframework in Embed Frameworks */,
+				19355BEE2721366200400007 /* RxRelay.xcframework in Embed Frameworks */,
+				19355BF02721366200400007 /* RxTest.xcframework in Embed Frameworks */,
+				19355BF22721366200400007 /* RxBlocking.xcframework in Embed Frameworks */,
+				19355BEA2721366200400007 /* RxCocoa.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		19355BE02721351200400007 /* RxCocoaRuntime.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoaRuntime.xcframework; path = Carthage/Build/RxCocoaRuntime.xcframework; sourceTree = "<group>"; };
+		19355BE42721366200400007 /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		19355BE52721366200400007 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		19355BE62721366200400007 /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
+		19355BE72721366200400007 /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxTest.xcframework; path = Carthage/Build/RxTest.xcframework; sourceTree = "<group>"; };
+		19355BE82721366200400007 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxBlocking.xcframework; path = Carthage/Build/RxBlocking.xcframework; sourceTree = "<group>"; };
 		F206BAB01F8D3DE900A25807 /* ReCaptcha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReCaptcha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F206BAB31F8D3DE900A25807 /* ReCaptcha-Carthage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReCaptcha-Carthage.h"; sourceTree = "<group>"; };
 		F206BAB41F8D3DE900A25807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,7 +96,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F206BB221F8D4DDF00A25807 /* RxSwift.framework in Frameworks */,
+				19355BEB2721366200400007 /* RxSwift.xcframework in Frameworks */,
+				19355BED2721366200400007 /* RxRelay.xcframework in Frameworks */,
+				19355BEF2721366200400007 /* RxTest.xcframework in Frameworks */,
+				19355BF12721366200400007 /* RxBlocking.xcframework in Frameworks */,
+				19355BE92721366200400007 /* RxCocoa.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +141,12 @@
 		F206BAD11F8D3E7600A25807 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				19355BE82721366200400007 /* RxBlocking.xcframework */,
+				19355BE42721366200400007 /* RxCocoa.xcframework */,
+				19355BE62721366200400007 /* RxRelay.xcframework */,
+				19355BE52721366200400007 /* RxSwift.xcframework */,
+				19355BE72721366200400007 /* RxTest.xcframework */,
+				19355BE02721351200400007 /* RxCocoaRuntime.xcframework */,
 				F206BB121F8D4D1400A25807 /* RxSwift.framework */,
 			);
 			name = Frameworks;
@@ -213,6 +256,7 @@
 				F206BB151F8D4DBC00A25807 /* Frameworks */,
 				F206BB161F8D4DBC00A25807 /* Headers */,
 				F206BB171F8D4DBC00A25807 /* Resources */,
+				19355BE32721351200400007 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,10 +279,12 @@
 				TargetAttributes = {
 					F206BAAF1F8D3DE900A25807 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 1300;
 						ProvisioningStyle = Automatic;
 					};
 					F206BB181F8D4DBC00A25807 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 1300;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -420,7 +466,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -444,11 +491,15 @@
 				INFOPLIST_FILE = "ReCaptcha-Carthage/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flaviocaetano.ReCaptcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -467,11 +518,15 @@
 				INFOPLIST_FILE = "ReCaptcha-Carthage/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flaviocaetano.ReCaptcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -491,12 +546,16 @@
 				INFOPLIST_FILE = ReCaptcha_RxSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_SWIFT_FLAGS = "-D IMPORT_RECAPTCHA";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flaviocaetano.ReCaptcha-RxSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -516,12 +575,16 @@
 				INFOPLIST_FILE = ReCaptcha_RxSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_SWIFT_FLAGS = "-D IMPORT_RECAPTCHA";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.flaviocaetano.ReCaptcha-RxSwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
